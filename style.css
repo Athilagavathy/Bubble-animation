@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.apple{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+    width:100px;
+    cursor: pointer;
+}
+.nav-bar{
+    width: 90%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+
+button{
+    color:white;
+    padding: 8px 25px;
+    background: transparent ;
+    border: 1px solid white;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.content{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+.side-bar{
+    width:50px;
+    height:100vh;
+    background: linear-gradient(#00545d, #000729);
+    position: absolute;
+    right:0;
+    top:0;
+}
+.menu{
+    display: block;
+    width:25px;
+    margin:40px auto 0;
+    cursor: pointer;
+}
+.social-icon{
+    height:85%;
+    width:50px;
+    background:none;
+    text-align: center;
+    padding-top:23%;
+    bottom:0;
+    position:absolute;
+}
+.social-icon .fa{
+    margin:15px 10px;
+    display:block;
+    padding:8px;
+    border:1px solid black;
+    border-radius:50%;
+    cursor:pointer;
+}
+.useful-icon{
+    width:50px;
+    text-align:center;
+    position:absolute;
+    bottom:40px;
+    position:absolute;
+}
+.useful-icon .fa{
+    margin:15px 10px;
+    display:block;
+    padding:8px;
+    border:1px solid black;
+    border-radius:50%;
+    cursor:pointer;
+}
+.bubbles img{
+    width:50px;
+    animation:bubble 5s linear infinite; /* After .bubbles block - This line is added*/
+}
+.bubbles{
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    position:absolute;
+    bottom:-70px; /* This line is changed from bottom:0; to bottom:-70px coz the bubbles are visible at the bottom of the page before it starts floating*/
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity:0;
+    }
+    50%{
+
+        opacity: 1;
+    }
+    70%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    width:25px;
+    animation-delay:2s;
+    
+}
+.bubbles img:nth-child(2){
+    animation-delay:1s;
+
+}
+.bubbles img:nth-child(3){
+    animation-delay:23s;
+}
+.bubbles img:nth-child(4){
+    animation-delay:4.5s;
+}
+.bubbles img:nth-child(5){
+    animation-delay:3s;
+}
+.bubbles img:nth-child(6){
+    width:20px;
+    animation-delay:6s;
+}
+.bubbles img:nth-child(7){
+    width:35px;
+    animation-delay:7s;
+
+}
